@@ -1,0 +1,25 @@
+/**
+宽高混入
+ */
+@mixin wh($width,$height){
+  width: $width;
+  height: $height;
+}
+/**
+flex混入样式
+ */
+@mixin flexmixin($justifyContent: center,$alifnItems: center,$flexFlow: row){
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alifnItems;
+  flex-flow: $flexFlow;
+}
+/**
+font混入样式
+*/
+@mixin fontmixin($fontSize,$fontWeight,$color:#fff){
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $color;
+
+}
