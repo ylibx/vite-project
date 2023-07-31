@@ -16,11 +16,19 @@ const children = Object.keys(modelsFile)
     .flat(1) || []
 
 
+// const routes: RouteRecordRaw[] = [
+//     {
+//         path: '/',
+//         name: 'home',
+//         component: () => import('@/views/login/login.vue'),
+//         children: children
+//     }
+// ]
 const routes: RouteRecordRaw[] = [
     {
         path: '/',
-        name: 'home',
-        component: () => import('@/views/home/Index.vue'),
+        name: 'login',
+        component: () => import('@/views/login/login.vue'),
         children: children
     }
 ]
